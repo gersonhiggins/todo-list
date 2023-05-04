@@ -1,0 +1,138 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.list {
+  background-color: white;
+  min-width: 370px;
+  max-width: 1300px;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(210, 210, 210);
+  border-bottom: none;
+  width: 100%;
+  height: 50px;
+}
+
+h1 {
+  padding-left: 12px;
+  font-size: 25px;
+  color: #3b3b3b;
+  font-weight: lighter;
+}
+
+ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+ul > li {
+  border: 1px solid rgb(210, 210, 210);
+  border-bottom: none;
+  margin: 0;
+}
+
+.add form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.chromeless-input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding-left: 20px;
+}
+
+.clear {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgb(210, 210, 210);
+  border-top: none;
+  background-color: #f1f1f1;
+  color: gray;
+  transition: 0.5s;
+}
+
+.clear:hover {
+  background-color: #492626;
+  color: white;
+  cursor: pointer;
+}
+
+.icon-return {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  z-index: 0;
+  background-image: url(/images/enter-b06ec7fb441bc0e40d61ba975a0291ad.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.refresh {
+  background-color: inherit;
+  border: none;
+  width: 40px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.rolling {
+  top: 22px;
+  width: 15px;
+  transition: 0.7s;
+}
+
+.rolling.active {
+  transform: rotate(360deg);
+}
+
+.tasks {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+}
+
+.toggle {
+  width: 30px;
+  height: 30px;
+}
+
+.toggle.active {
+  background-image: url(/images/221730.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  border: inherit;
+  background-color: inherit;
+}
+
+.text.active {
+  text-decoration: line-through;
+}
