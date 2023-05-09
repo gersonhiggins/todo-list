@@ -1,4 +1,6 @@
 import Todolist from './modules/dom.js';
+import './style.css';
+
 
 const library = new Todolist();
 

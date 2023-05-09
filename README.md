@@ -10,7 +10,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
+    -[Live Version](#live-version)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -55,11 +55,9 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
+### Live Version <a name="live-version"></a>
 
-> comming soon!
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+[Live Version](https://gersonhiggins.github.io/to-do-list/dist/)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -119,8 +117,7 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Search functionality: Allow users to search for books by title, author, or other keywords.**
-- **Custom categories: Give users the ability to create custom categories or tags for their books, such as "To Read", "Favorites", or "Non-Fiction"**
+- **Move Task With mouse**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

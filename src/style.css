@@ -86,7 +86,7 @@ ul > li {
   border: none;
   background-color: transparent;
   z-index: 0;
-  background-image: url(/images/enter-b06ec7fb441bc0e40d61ba975a0291ad.png);
+  background-image: url('./images/enter-b06ec7fb441bc0e40d61ba975a0291ad.png'); 
   background-repeat: no-repeat;
   background-position: center;
   width: 40px;
@@ -96,16 +96,16 @@ ul > li {
 
 .refresh {
   background-color: inherit;
+  background-image: url('./images/refresh.png');
+  background-size: cover;
+  background-repeat: no-repeat;
   border: none;
   width: 40px;
-  height: 50px;
+  height: 40px;
   cursor: pointer;
 }
-
 .rolling {
-  top: 22px;
-  width: 15px;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 
 .rolling.active {
@@ -114,25 +114,54 @@ ul > li {
 
 .tasks {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   gap: 15px;
+  width: 100%;
+  
 }
-
+.box1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+}
+.box2 {
+    height: 50px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
 .toggle {
   width: 30px;
   height: 30px;
+  z-index: 5;
 }
 
 .toggle.active {
-  background-image: url(/images/221730.png);
+  background-image: url('./images/100470.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 24px;
   border: inherit;
   background-color: inherit;
 }
-
+.text { 
+  border: none;
+}
 .text.active {
   text-decoration: line-through;
+}
+
+.drag-bar {
+  display: block;
+  position: relative;
+  margin-top: 3px;
+  width: 5px;
+  height: 5px;
+  background-color: gray;
+  gap: 10px;
+  pointer-events: none;
 }

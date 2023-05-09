@@ -40,15 +40,37 @@ export default class Todolist {
       const node1 = document.createElement('div');
       node1.setAttribute('class', 'tasks');
       this.container.appendChild(node1);
+      const box1 = document.createElement('div');
+      const box2 =document.createElement('div');
+      box1.setAttribute('class', 'box1');
+      box2.setAttribute('class', 'box2');
+      node1.appendChild(box1);
+      node1.appendChild(box2);
       const checkbox = document.createElement('button');
       checkbox.setAttribute('class', 'toggle');
       checkbox.setAttribute('data-id', `${index}`);
-      node1.appendChild(checkbox);
-      const node2 = document.createElement('p');
+      box1.appendChild(checkbox);
+      const node2 = document.createElement('input');
       node2.setAttribute('class', 'text');
-      node2.innerText = `${element.item}`;
-      node1.appendChild(node2);
+      node2.value = `${element.item}`
+      box1.appendChild(node2);
+      const drag = document.createElement('div');
+      drag.setAttribute('class', 'dragable');
+      const span1 = document.createElement('span');
+      const span2 = document.createElement('span');
+      const span3 = document.createElement('span');
+      span1.setAttribute('class', 'drag-bar');
+      span2.setAttribute('class', 'drag-bar');
+      span3.setAttribute('class', 'drag-bar');
+      drag.append(span1, span2, span3);
+      box2.appendChild(drag);
+      node2.addEventListener('change', () => {
+        this.collection[index].item = node2.value;
+        localStorage.setItem('collection', JSON.stringify(this.collection));
+      })
+
     });
+    
   }
 
   clearItem() {
