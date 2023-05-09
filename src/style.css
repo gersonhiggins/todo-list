@@ -86,7 +86,7 @@ ul > li {
   border: none;
   background-color: transparent;
   z-index: 0;
-  background-image: url('./images/enter-b06ec7fb441bc0e40d61ba975a0291ad.png'); 
+  background-image: url('./images/enter-b06ec7fb441bc0e40d61ba975a0291ad.png');
   background-repeat: no-repeat;
   background-position: center;
   width: 40px;
@@ -104,6 +104,7 @@ ul > li {
   height: 40px;
   cursor: pointer;
 }
+
 .rolling {
   transition: 0.5s;
 }
@@ -118,22 +119,24 @@ ul > li {
   align-items: center;
   gap: 15px;
   width: 100%;
-  
 }
+
 .box1 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
 }
+
 .box2 {
-    height: 50px;
-    width: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  height: 50px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
+
 .toggle {
   width: 30px;
   height: 30px;
@@ -148,9 +151,11 @@ ul > li {
   border: inherit;
   background-color: inherit;
 }
-.text { 
+
+.text {
   border: none;
 }
+
 .text.active {
   text-decoration: line-through;
 }
