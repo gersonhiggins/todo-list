@@ -41,7 +41,7 @@ export default class Todolist {
       node1.setAttribute('class', 'tasks');
       this.container.appendChild(node1);
       const box1 = document.createElement('div');
-      const box2 =document.createElement('div');
+      const box2 = document.createElement('div');
       box1.setAttribute('class', 'box1');
       box2.setAttribute('class', 'box2');
       node1.appendChild(box1);
@@ -52,7 +52,7 @@ export default class Todolist {
       box1.appendChild(checkbox);
       const node2 = document.createElement('input');
       node2.setAttribute('class', 'text');
-      node2.value = `${element.item}`
+      node2.value = `${element.item}`;
       box1.appendChild(node2);
       const drag = document.createElement('div');
       drag.setAttribute('class', 'dragable');
@@ -67,10 +67,8 @@ export default class Todolist {
       node2.addEventListener('change', () => {
         this.collection[index].item = node2.value;
         localStorage.setItem('collection', JSON.stringify(this.collection));
-      })
-
+      });
     });
-    
   }
 
   clearItem() {
