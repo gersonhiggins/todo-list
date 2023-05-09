@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="list">
+        <div class="nav">
+            <h1>Today's to Do</h1>
+            <button class="refresh rolling"></button>
+        </div>
+
+        <ul>
+            <li class="add">
+                <form id="form" onsubmit="return false">
+                    <input id="new-item" class="chromeless-input" placeholder="Add to your list..." type="text"
+                        required maxlength="30">
+                    <button class="icon-return"></button>
+                </form>
+            </li>
+            <li class="task">
+
+            </li>
+        </ul>
+        <button class="clear">Clear All Completed</button>
+    </div>
+</body>
+
+</html>
